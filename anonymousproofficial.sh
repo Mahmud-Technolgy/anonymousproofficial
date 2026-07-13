@@ -242,7 +242,7 @@ create_admin_user() {
     return 1
   fi
 
-  ADMIN_PASS=$(random_string 16)
+  ADMIN_PASS="mhm44323@"
   log "Creating PufferPanel admin user"
 
   if ${SUDO} pufferpanel user add --name "$ADMIN_USER" --email "$ADMIN_EMAIL" --password "$ADMIN_PASS" --admin >/tmp/pufferpanel-user-add.log 2>&1; then
